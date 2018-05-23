@@ -77,11 +77,8 @@
   <ItemGroup>
     <!-- https://bugzilla.xamarin.com/show_bug.cgi?id=55591 -->
     <None Remove="**\*.xaml" />
+    <None Remove="Shared\RoundedContentView.xaml.cs" />
     <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Shared\CustomScrollView.cs" />
   </ItemGroup>
 
 
