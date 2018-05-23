@@ -6,38 +6,8 @@
              BackgroundColor="AliceBlue"
              xmlns:custom="clr-namespace:CarouselView;assembly=HotTotem.CarouselView">
 
-    <StackLayout Padding="20">
-        <custom:Carousel x:Name="carousel" Snapping="True" SnapPosition="0.5" Indicators="True" IndicatorsColor="Black">
-            <custom:Carousel.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid BackgroundColor="Transparent" Padding="0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="15"/>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="30"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Grid.Column="0" Grid.ColumnSpan="3" Margin="19.5,16,19.5,16" Padding="16" BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="24" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="20" />
-                                        <RowDefinition Height="10" />
-                                        <RowDefinition Height="44" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="64" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
-                                    <BoxView BackgroundColor="Black" Grid.Row="0" Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="2"/>
-                                </Grid>
-                            </StackLayout>
-                        </Grid>
-                    </ViewCell>
-                </DataTemplate>
-            </custom:Carousel.ItemTemplate>
-        </custom:Carousel>
+    <StackLayout Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#009577">
+       <
     </StackLayout>
 
 </ContentPage>

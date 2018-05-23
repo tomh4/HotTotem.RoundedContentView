@@ -4,13 +4,13 @@ using Android.Graphics;
 using Android.OS;
 using Android.Support.V4.View;
 using Android;
-using CustomRenderer.Android;
-using Foodhorn.Controls;
+using HotTotem.RoundedContentView.Droid.CustomRenderers;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using HotTotem.RoundedContentView;
 
 [assembly: ExportRenderer(typeof(RoundedContentView), typeof(RoundedContentViewRenderer))]
-namespace CustomRenderer.Android
+namespace HotTotem.RoundedContentView.Droid.CustomRenderers
 {
     public class RoundedContentViewRenderer : ViewRenderer
     {

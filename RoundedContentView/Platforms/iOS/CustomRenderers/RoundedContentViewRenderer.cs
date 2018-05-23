@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Diagnostics;
 using CoreGraphics;
-using CustomRenderer.iOS;
-using Foodhorn.Controls;
+using HotTotem.RoundedContentView;
+using HotTotem.RoundedContentView.iOS.CustomRenderers;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportRenderer(typeof(RoundedContentView), typeof(RoundedContentViewRenderer))]
-namespace CustomRenderer.iOS
+namespace HotTotem.RoundedContentView.iOS.CustomRenderers
 {
     public class RoundedContentViewRenderer : ViewRenderer
     {

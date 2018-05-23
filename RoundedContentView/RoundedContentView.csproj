@@ -7,10 +7,10 @@
     <PackageId>HotTotem.RoundedContentView</PackageId>
 
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
-    <AssemblyFileVersion>1.0.1</AssemblyFileVersion>
-    <Version>1.0.1</Version>
-    <PackageVersion>1.0.1</PackageVersion>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -21,13 +21,13 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 
     <!--TODO: Fill these in-->
-    <PackageProjectUrl>https://github.com/tomh4/FormsCarouselView</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tomh4/HotTotem.RoundedContentView</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tomh4/FormsCarouselView</RepositoryUrl>
-    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.CarouselView</PackageTags>
+    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.RoundedContentView</PackageTags>
 
-    <Title>HotTotem.CarouselView Plugin for Xamarin Forms</Title>
-    <Summary>Highly customizable MVVM CarouselView for Xamarin Forms</Summary>
-    <Description>A CarouselView that can be easily customized and tweaked to your needs and works cross-platform on Android and iOS without the need for any platform specific coding.</Description>
+    <Title>HotTotem.RoundedContentView Plugin for Xamarin Forms</Title>
+    <Summary>A universal Contentview with support for rounded edges</Summary>
+    <Description>A contentview which allows rounded edges of any size, right within Xamarin.Forms</Description>
 
     <Owners>HotTotem</Owners>
     <Authors>HotTotem</Authors>
@@ -91,6 +91,13 @@
 
   <ItemGroup>
     <Folder Include="Platforms\UWP\CustomRenderers\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Update="Shared\RoundedContentView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <!--

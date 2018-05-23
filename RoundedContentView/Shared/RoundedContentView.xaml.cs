@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Foodhorn.Controls
+namespace HotTotem.RoundedContentView
 {
     public partial class RoundedContentView : StackLayout
     {
