@@ -1,0 +1,122 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;MonoAndroid80;Xamarin.iOS10;</TargetFrameworks>
+    <AssemblyName>HotTotem.RoundedContentView</AssemblyName>
+    <RootNamespace>HotTotem.RoundedContentView</RootNamespace>
+    <PackageId>HotTotem.RoundedContentView</PackageId>
+
+    <Product>$(AssemblyName) ($(TargetFramework))</Product>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <AssemblyFileVersion>1.0.1</AssemblyFileVersion>
+    <Version>1.0.1</Version>
+    <PackageVersion>1.0.1</PackageVersion>
+    <PackOnBuild>true</PackOnBuild>
+    <NeutralLanguage>en</NeutralLanguage>
+    <LangVersion>default</LangVersion>
+    <DefineConstants>$(DefineConstants);</DefineConstants>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+    <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    <!--TODO: Fill these in-->
+    <PackageProjectUrl>https://github.com/tomh4/FormsCarouselView</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tomh4/FormsCarouselView</RepositoryUrl>
+    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.CarouselView</PackageTags>
+
+    <Title>HotTotem.CarouselView Plugin for Xamarin Forms</Title>
+    <Summary>Highly customizable MVVM CarouselView for Xamarin Forms</Summary>
+    <Description>A CarouselView that can be easily customized and tweaked to your needs and works cross-platform on Android and iOS without the need for any platform specific coding.</Description>
+
+    <Owners>HotTotem</Owners>
+    <Authors>HotTotem</Authors>
+    <Copyright>Copyright 2018</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSBuild.Sdk.Extras" Version="1.5.4" PrivateAssets="All" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <Compile Include="Shared\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.0' ">
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0.15063' ">
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="5.2.3" />
+    <Compile Include="Platforms\UWP\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'MonoAndroid80' ">
+    <Compile Include="Platforms\Android\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.iOS10' ">
+    <Compile Include="Platforms\iOS\**\*.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.TVOS10' ">
+    <Compile Include="Platforms\TVOS\**\*.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.WatchOS10' ">
+    <Compile Include="Platforms\WatchOS\**\*.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Xamarin.Mac20' ">
+    <Compile Include="Platforms\macOS\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- https://bugzilla.xamarin.com/show_bug.cgi?id=55591 -->
+    <None Remove="**\*.xaml" />
+    <Compile Update="**\*.xaml.cs" DependentUpon="%(Filename)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Shared\CustomScrollView.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="Shared\Carousel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Platforms\UWP\CustomRenderers\" />
+  </ItemGroup>
+
+  <!--
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0' ">
+    <Compile Include="Platforms\DotNet\**\*.cs" />
+  </ItemGroup>
+  -->
+
+
+  <!--
+  <ItemGroup Condition=" '$(TargetFramework)' == 'Tizen40' ">
+    <Compile Include="Platforms\Tizen\**\*.cs" />
+    <PackageReference Include="Tizen.NET" Version="4.0.0" />
+  </ItemGroup>
+  -->
+
+  <!--
+    <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Compile Include="Platforms\DotNet\**\*.cs" />
+  </ItemGroup>
+  -->
+
+
+
+  <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
+</Project>
