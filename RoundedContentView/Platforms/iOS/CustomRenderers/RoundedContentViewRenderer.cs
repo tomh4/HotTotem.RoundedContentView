@@ -42,15 +42,12 @@ namespace HotTotem.RoundedContentView.iOS.CustomRenderers
             this.LayoutIfNeeded();
 
             RoundedContentView rcv = (RoundedContentView)Element;
-            //rcv.HasShadow = false;  
             if (rcv == null)
                 return;
-            //rcv.Margin = rcv.CustomMargin;
-            //this.BackgroundColor = rcv.FillColor.ToUIColor();  
             this.ClipsToBounds = true;
             this.Layer.BackgroundColor = rcv.FillColor.ToCGColor();
             this.Layer.MasksToBounds = true;
-            this.Layer.CornerRadius = (nfloat)rcv.RoundedCornerRadius;
+            this.Layer.CornerRadius = (nfloat)rcv.CornerRadius;
             if (rcv.HasShadow)
             {
                 this.Layer.ShadowRadius = 3.0f;

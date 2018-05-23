@@ -14,7 +14,6 @@ namespace HotTotem.RoundedContentView.Droid.CustomRenderers
 {
     public class RoundedContentViewRenderer : ViewRenderer
     {
-        private RoundedContentView _roundedContentView = null;
         public RoundedContentViewRenderer(Context context) : base(context)
         {
         }
@@ -31,7 +30,7 @@ namespace HotTotem.RoundedContentView.Droid.CustomRenderers
 
             rcv.Padding = new Thickness(0, 0, 0, 0);
             //rcv.HasShadow = false;  
-            int radius = (int)(rcv.RoundedCornerRadius);
+            int radius = (int)(rcv.CornerRadius);
             // Check if make circle is set to true. If so, then we just use the width and  
             // height of the control to calculate the radius. RoundedCornerRadius will be ignored  
             // in this case.  

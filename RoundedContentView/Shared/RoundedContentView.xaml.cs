@@ -6,11 +6,17 @@ namespace HotTotem.RoundedContentView
 {
     public partial class RoundedContentView : StackLayout
     {
+        /// <summary>
+        /// The background color of the rounded ContentView
+        /// </summary>
         public Color FillColor  
         {  
             get { return (Color)GetValue(FillColorProperty); }  
-            set { SetValue(FillColorProperty, value); }  
-        } 
+            set { SetValue(FillColorProperty, value); }
+        }
+        /// <summary>
+        /// The background color of the rounded ContentView
+        /// </summary>
         public static readonly BindableProperty FillColorProperty = BindableProperty.Create(
             propertyName: "FillColor",
             returnType: typeof(Color),
@@ -18,20 +24,27 @@ namespace HotTotem.RoundedContentView
             defaultValue: Color.White,
             defaultBindingMode: BindingMode.OneWay
         ); 
-         
-        public double RoundedCornerRadius  
+         /// <summary>
+         /// The Corner Radius of the ContentView
+         /// Defaults to 0 which is not rounded.
+         /// </summary>
+        public double CornerRadius  
         {  
-            get { return (double)GetValue(RoundedCornerRadiusProperty); }  
-            set { SetValue(RoundedCornerRadiusProperty, value); }  
+            get { return (double)GetValue(CornerRadiusProperty); }  
+            set { SetValue(CornerRadiusProperty, value); }  
         }  
-        public static readonly BindableProperty RoundedCornerRadiusProperty = BindableProperty.Create(
-            propertyName: "RoundedCornerRadius",
+        public static readonly BindableProperty CornerRadiusProperty = BindableProperty.Create(
+            propertyName: "CornerRadius",
             returnType: typeof(double),
             declaringType: typeof(RoundedContentView),
-            defaultValue: 3d,
+            defaultValue: 0d,
             defaultBindingMode: BindingMode.OneWay
         );  
-        
+        /// <summary>
+        /// If set to true, the ContentView will be circular
+        /// This means the edges will be rounded as much as necessary 
+        /// to form a circle
+        /// </summary>
         public bool MakeCircle  
         {  
             get { return (bool)GetValue(MakeCircleProperty); }  
@@ -99,6 +112,7 @@ namespace HotTotem.RoundedContentView
         public RoundedContentView()
         {
             InitializeComponent();
+            BackgroundColor = Color.Transparent;
         }
     }
 }
