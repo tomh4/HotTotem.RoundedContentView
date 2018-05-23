@@ -1,2 +1,2 @@
-# HotTotem.CarouselView
-A customizable carouselview for Xamarin Forms.
+# HotTotem.RoundedContentView
+A contentview which allows for rounded edges
