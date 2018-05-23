@@ -30,7 +30,7 @@ namespace HotTotem.RoundedContentView.iOS.CustomRenderers
                 }
                 catch (Exception exp)
                 {
-                    Debug.WriteLine("Handled Exception in RoundedCornerViewDemoRenderer. Just warngin : " + exp.Message);
+                    Debug.WriteLine("Warning : " + exp.Message);
                 }
             };
         }
@@ -57,7 +57,7 @@ namespace HotTotem.RoundedContentView.iOS.CustomRenderers
                 this.Layer.ShadowPath = UIBezierPath.FromRect(Layer.Bounds).CGPath;
                 this.Layer.MasksToBounds = false;
             }
-            if (rcv.MakeCircle)
+            if (rcv.Circle)
             {
                 this.Layer.CornerRadius = (int)(Math.Min(Element.Width, Element.Height) / 2);
             }

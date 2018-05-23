@@ -45,13 +45,13 @@ namespace HotTotem.RoundedContentView
         /// This means the edges will be rounded as much as necessary 
         /// to form a circle
         /// </summary>
-        public bool MakeCircle  
+        public bool Circle  
         {  
-            get { return (bool)GetValue(MakeCircleProperty); }  
-            set { SetValue(MakeCircleProperty, value); }  
+            get { return (bool)GetValue(CircleProperty); }  
+            set { SetValue(CircleProperty, value); }  
         }  
-        public static readonly BindableProperty MakeCircleProperty =  BindableProperty.Create(
-            propertyName: "MakeCircle",
+        public static readonly BindableProperty CircleProperty =  BindableProperty.Create(
+            propertyName: "Circle",
             returnType: typeof(bool),
             declaringType: typeof(RoundedContentView),
             defaultValue: false,
@@ -113,6 +113,7 @@ namespace HotTotem.RoundedContentView
         {
             InitializeComponent();
             BackgroundColor = Color.Transparent;
+            
         }
     }
 }
