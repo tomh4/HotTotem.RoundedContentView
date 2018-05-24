@@ -95,25 +95,11 @@ namespace HotTotem.RoundedContentView
             declaringType: typeof(RoundedContentView),
             defaultValue: 1,
             defaultBindingMode: BindingMode.OneWay
-        );   
-
-        public Thickness CustomMargin  
-        {  
-            get { return (Thickness)GetValue(CustomMarginProperty); }  
-            set { SetValue(CustomMarginProperty, value); }  
-        }  
-        public static readonly BindableProperty CustomMarginProperty =   BindableProperty.Create(
-            propertyName: "CustomMargin",
-            returnType: typeof(Thickness),
-            declaringType: typeof(RoundedContentView),
-            defaultValue: new Thickness(0),
-            defaultBindingMode: BindingMode.OneWay
-        );  
+        );    
         public RoundedContentView()
         {
             InitializeComponent();
-            BackgroundColor = Color.Transparent;
-            
+            BackgroundColor = Color.Transparent;            
         }
     }
 }

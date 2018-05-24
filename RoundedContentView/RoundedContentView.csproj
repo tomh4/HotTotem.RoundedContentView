@@ -22,7 +22,7 @@
 
     <!--TODO: Fill these in-->
     <PackageProjectUrl>https://github.com/tomh4/HotTotem.RoundedContentView</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/tomh4/FormsCarouselView</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tomh4/HotTotem.RoundedContentView</RepositoryUrl>
     <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.RoundedContentView</PackageTags>
 
     <Title>HotTotem.RoundedContentView Plugin for Xamarin Forms</Title>
