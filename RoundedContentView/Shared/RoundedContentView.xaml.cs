@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace HotTotem.RoundedContentView
 {
-    public partial class RoundedContentView : StackLayout
+    public partial class RoundedContentView : ContentView
     {
         /// <summary>
         /// The background color of the rounded ContentView
