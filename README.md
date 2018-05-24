@@ -1,5 +1,5 @@
-# HotTotem.RoundedContentView
-A ContentView which allows for rounded edges [![NuGet Version and Download count](https://buildstats.info/nuget/HotTotem.RoundedContentView)](https://www.nuget.org/packages/HotTotem.RoundedContentView) 
+# HotTotem.RoundedContentView [![NuGet Version and Download count](https://buildstats.info/nuget/HotTotem.RoundedContentView)](https://www.nuget.org/packages/HotTotem.RoundedContentView) 
+A ContentView which allows for rounded edges 
 -----
 <img src="https://hot-totem.com/storage/app/media/Blogimages/Demo.png">
 
