@@ -1,6 +1,6 @@
 # HotTotem.RoundedContentView
 A ContentView which allows for rounded edges
-
+-----
 <img src="https://hot-totem.com/storage/app/media/Blogimages/Demo.png">
 
 This control allows for several settings and options : 
@@ -16,4 +16,5 @@ Simply install the Nuget Package to all your projects ( be aware this is a  .NET
 
 For a detailed walkthrough on using this Plugin and it's settings, read this guide : https://hot-totem.com/blog/post/plugins-hottotemroundedcontentview
 
+-----
 <img src="https://hot-totem.com/storage/app/media/Files/logohottotemfinal-270276.png"  height="200">
