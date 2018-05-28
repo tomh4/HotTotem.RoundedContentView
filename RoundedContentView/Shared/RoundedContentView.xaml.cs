@@ -6,6 +6,9 @@ namespace HotTotem.RoundedContentView
 {
     public partial class RoundedContentView : ContentView
     {
+        public static void Init()
+        {
+        }
         /// <summary>
         /// The background color of the rounded ContentView
         /// </summary>

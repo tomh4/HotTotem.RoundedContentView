@@ -7,10 +7,10 @@
     <PackageId>HotTotem.RoundedContentView</PackageId>
 
     <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <AssemblyVersion>1.0.0</AssemblyVersion>
-    <AssemblyFileVersion>1.0.0</AssemblyFileVersion>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <AssemblyFileVersion>1.0.0.2</AssemblyFileVersion>
+    <Version>1.0.0.2</Version>
+    <PackageVersion>1.0.0.2</PackageVersion>
     <PackOnBuild>true</PackOnBuild>
     <NeutralLanguage>en</NeutralLanguage>
     <LangVersion>default</LangVersion>
@@ -23,11 +23,11 @@
     <!--TODO: Fill these in-->
     <PackageProjectUrl>https://github.com/tomh4/HotTotem.RoundedContentView</PackageProjectUrl>
     <RepositoryUrl>https://github.com/tomh4/HotTotem.RoundedContentView</RepositoryUrl>
-    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.RoundedContentView</PackageTags>
+    <PackageTags>xamarin, windows, ios, android, xamarin.forms, plugin, HotTotem.RoundedContentView, rounded, contentview</PackageTags>
 
     <Title>HotTotem.RoundedContentView Plugin for Xamarin Forms</Title>
     <Summary>A universal Contentview with support for rounded edges</Summary>
-    <Description>A contentview which allows rounded edges of any size, right within Xamarin.Forms</Description>
+    <Description>A contentview which allows rounded edges of any size, right within Xamarin.Forms. Plus alot of extra customizations.</Description>
 
     <Owners>HotTotem</Owners>
     <Authors>HotTotem</Authors>

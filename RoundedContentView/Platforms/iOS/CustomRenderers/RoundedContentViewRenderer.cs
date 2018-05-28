@@ -52,9 +52,9 @@ namespace HotTotem.RoundedContentView.iOS.CustomRenderers
             {
                 this.Layer.ShadowRadius = 3.0f;
                 this.Layer.ShadowColor = UIColor.Gray.CGColor;
-                this.Layer.ShadowOffset = new CGSize(1, 1);
+                this.Layer.ShadowOffset = new CGSize(1,1);
                 this.Layer.ShadowOpacity = 0.60f;
-                this.Layer.ShadowPath = UIBezierPath.FromRect(Layer.Bounds).CGPath;
+                //this.Layer.ShadowPath = UIBezierPath.FromRect(Layer.ContentsRect).CGPath;
                 this.Layer.MasksToBounds = false;
             }
             if (rcv.Circle)
